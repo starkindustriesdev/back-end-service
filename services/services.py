@@ -11,6 +11,7 @@ class UserService:
         return user
     
     async def get_user(self):
-        user = DbManager().db[USERS].find_one({})
-        user.pop('_id')
-        return user
+        users = DbManager().db[USERS].find().to_list()
+        for user in users:
+            user.pop('_id')
+        return users
