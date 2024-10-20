@@ -1,0 +1,6 @@
+fastapi
+loguru
+uvicorn
+pymongo
+python-dotenv
+pydantic[email]
