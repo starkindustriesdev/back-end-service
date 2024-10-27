@@ -8,6 +8,7 @@ import requests
 
 
 USERS = 'users'
+MASTER_DATA = 'masterdata'
 
 class UserService:
 
