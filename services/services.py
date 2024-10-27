@@ -26,6 +26,8 @@ class UserService:
                     "pincode": user_data.pincode,
                     "address": user_data.address
             }
+
+            
             if not data:
                 logger.warning("Please fill all the required details")
                 raise HTTPException(status_code= 400, detail="Please fill all the required details")
